@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.message {
+  display: flex;
+  color: aliceblue;
+  word-wrap: break-word;
+  margin-right: 40px;
+  padding: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: gray solid 1px ;
+}
+
+.time {
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+}
+
+.name {
+  font-size: 15px;
+  color: plum;
+  font-weight: bold;
+}
+
+.messageBody {
+  opacity: 0.85;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0;
+  background-color: black;
+}
+.angel {
+  width: 15px;
+  height: 15px;
+  background: radial-gradient(circle at 0 0, rgba(0,0,0,0) 15px, rgba(0, 0, 0, 0.85)0);
+}
