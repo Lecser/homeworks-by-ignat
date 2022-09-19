@@ -1,5 +1,5 @@
 import React, { ChangeEvent, KeyboardEvent } from "react";
-import s from "./Greeting.module.css";
+import classes from "./Greeting.module.css";
 import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
@@ -18,17 +18,18 @@ const Greeting: React.FC<GreetingPropsType> = (
 ) => {
   const buttonStatus = name.length === 0;
   return (
-    <div>
-      <SuperButton onClick={addUser} disabled={buttonStatus}>
-        Add
-      </SuperButton>
-      <span>{totalUsers}</span>
-      <SuperInputText
+    <div className={classes.someClass}>
+      <input
         onChange={setNameCallback}
         value={name}
         onKeyUp={onKeyPresHandler}
-        error={error}
+        className={error && classes.error}
       />
+      <button onClick={addUser} disabled={buttonStatus}>
+        add
+      </button>
+      <span>{totalUsers}</span>
+      <div className={classes.errorMessage}> {error}</div>
     </div>
   );
 };

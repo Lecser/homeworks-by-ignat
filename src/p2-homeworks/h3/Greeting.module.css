@@ -1,7 +1,12 @@
 .someClass {
-
+    padding-bottom: 20px;
 }
 
 .error {
     border: 1px solid red;
+}
+
+.errorMessage {
+    position: absolute;
+    color: red;
 }
