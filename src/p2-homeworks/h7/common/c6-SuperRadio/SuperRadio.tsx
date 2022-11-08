@@ -1,9 +1,8 @@
 import React, {
   ChangeEvent,
-  InputHTMLAttributes,
   DetailedHTMLProps,
+  InputHTMLAttributes,
 } from "react";
-import { log } from "util";
 
 type DefaultRadioPropsType = DetailedHTMLProps<
   InputHTMLAttributes<HTMLInputElement>,
